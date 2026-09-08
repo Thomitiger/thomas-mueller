@@ -344,8 +344,8 @@ export const site = {
     socialLabel: 'Oder schreib mir dort:',
     /** Aktuell nur Facebook und Instagram — nicht LinkedIn, nicht TikTok. */
     social: [
-      { label: 'Facebook', href: '{{FACEBOOK}}' },
-      { label: 'Instagram', href: '{{INSTAGRAM}}' },
+      { label: 'Facebook', href: 'https://www.facebook.com/thomas.mueller.52493' },
+      { label: 'Instagram', href: 'https://www.instagram.com/thomas.mueller62/' },
     ] satisfies NavLink[],
   },
 

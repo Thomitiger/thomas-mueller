@@ -36,13 +36,13 @@ Meta-Angaben „Seit" und „Standort" wurden auf Wunsch gestrichen.
 
 ## Inhalt
 
-„Mein Weg" ist erledigt und braucht keine Platzhalter mehr. Offen bleiben nur
-noch:
+„Mein Weg" ist erledigt, Facebook und Instagram sind verlinkt
+(https://www.facebook.com/thomas.mueller.52493,
+https://www.instagram.com/thomas.mueller62/). Offen bleibt nur noch:
 
-| Platzhalter                      | Datei             | Zeile   | Was gebraucht wird                                             |
-| -------------------------------- | ----------------- | ------- | -------------------------------------------------------------- |
-| `{{E-MAIL-ADRESSE}}`             | `content/site.ts` | 323     | Öffentliche Kontaktadresse für den mailto-Fallback im Formular |
-| `{{FACEBOOK}}` · `{{INSTAGRAM}}` | `content/site.ts` | 329–330 | Volle URLs für die Social-Pills in der Gespräch-Sektion        |
+| Platzhalter          | Datei             | Zeile | Was gebraucht wird                                             |
+| -------------------- | ----------------- | ----- | -------------------------------------------------------------- |
+| `{{E-MAIL-ADRESSE}}` | `content/site.ts` | 323   | Öffentliche Kontaktadresse für den mailto-Fallback im Formular |
 
 ---
 
