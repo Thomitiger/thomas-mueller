@@ -338,7 +338,7 @@ export const site = {
     formEndpoint: '{{FORM_ENDPOINT}}' as Placeholder,
     mailtoFallback: {
       label: 'Oder schreib direkt:',
-      email: '{{E-MAIL-ADRESSE}}' as Placeholder,
+      email: 'thomitiger@gmail.com',
       subject: 'Anfrage Gespräch',
     },
     socialLabel: 'Oder schreib mir dort:',

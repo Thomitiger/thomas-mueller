@@ -38,11 +38,10 @@ Meta-Angaben „Seit" und „Standort" wurden auf Wunsch gestrichen.
 
 „Mein Weg" ist erledigt, Facebook und Instagram sind verlinkt
 (https://www.facebook.com/thomas.mueller.52493,
-https://www.instagram.com/thomas.mueller62/). Offen bleibt nur noch:
-
-| Platzhalter          | Datei             | Zeile | Was gebraucht wird                                             |
-| -------------------- | ----------------- | ----- | -------------------------------------------------------------- |
-| `{{E-MAIL-ADRESSE}}` | `content/site.ts` | 323   | Öffentliche Kontaktadresse für den mailto-Fallback im Formular |
+https://www.instagram.com/thomas.mueller62/), und der mailto-Fallback im
+Formular zeigt jetzt auf `thomitiger@gmail.com`. Keine offenen Platzhalter
+mehr in diesem Abschnitt — nur noch die Formularanbindung selbst
+(`{{FORM_ENDPOINT}}`, siehe Technik unten) und das Rechtliche.
 
 ---
 
