@@ -54,11 +54,11 @@ der Website-UI, beide erfolgreich zugestellt.
 
 Diese Punkte müssen erledigt sein, bevor die Seite online geht.
 
-| Platzhalter                            | Datei             | Zeile   | Was gebraucht wird                                                                                                              |
-| -------------------------------------- | ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `{{DISCLAIMER — juristisch geprüft?}}` | `content/site.ts` | 353     | Wortlaut vorgegeben, muss trotzdem von einer Fachperson geprüft und mit den Vorgaben des Partnerunternehmens abgeglichen werden |
-| Impressum, alle Felder                 | `content/site.ts` | 362–370 | Name, Firmierung, Adresse, Kontakt, UID/MWST soweit vorhanden, Partnerunternehmen (falls rechtlich nötig), Haftungsausschluss   |
-| Datenschutzerklärung, alle Felder      | `content/site.ts` | 379–386 | Muss zur tatsächlichen Datenverarbeitung passen (revDSG, bei EU-Bezug DSGVO)                                                    |
+| Platzhalter                            | Datei             | Zeile   | Was gebraucht wird                                                                                                                                                         |
+| -------------------------------------- | ----------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{{DISCLAIMER — juristisch geprüft?}}` | `content/site.ts` | 371     | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft und mit den Vorgaben des Partnerunternehmens abgeglichen werden |
+| Impressum, alle Felder                 | `content/site.ts` | 380–388 | Name, Firmierung, Adresse, Kontakt, UID/MWST soweit vorhanden, Partnerunternehmen (falls rechtlich nötig), Haftungsausschluss                                              |
+| Datenschutzerklärung, alle Felder      | `content/site.ts` | 397–404 | Muss zur tatsächlichen Datenverarbeitung passen (revDSG, bei EU-Bezug DSGVO)                                                                                               |
 
 Weiter zu prüfen, ausserhalb der Platzhalter:
 

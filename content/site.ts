@@ -366,7 +366,7 @@ export const site = {
      * abgleichen — siehe TODO.md.
      */
     disclaimer:
-      'Thomas Müller ist selbstständiger Vertriebspartner und handelt in eigenem Namen und auf eigene Rechnung. Diese Seite ist kein Angebot eines Anstellungsverhältnisses und keine Aufforderung zum Erwerb von Produkten. Es bestehen keine garantierten Einkünfte; der wirtschaftliche Erfolg hängt von eigener Leistung, Zeiteinsatz und Marktbedingungen ab und kann auch ausbleiben. Die Haltung folgt der Philosophie von ALIVE — The Movement.',
+      'Thomas Müller ist selbstständiger Vertriebspartner und handelt in eigenem Namen und auf eigene Rechnung. Diese Seite ist kein Angebot eines Anstellungsverhältnisses und keine Aufforderung zum Erwerb von Produkten. Es bestehen keine garantierten Einkünfte; der wirtschaftliche Erfolg hängt von eigener Leistung, Zeiteinsatz und Marktbedingungen ab und kann auch ausbleiben.',
     disclaimerReviewNote:
       '{{DISCLAIMER — juristisch geprüft? Vorgaben des Partnerunternehmens abgleichen}}',
     copyrightName: 'Thomas Müller',
