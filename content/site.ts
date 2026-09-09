@@ -101,8 +101,7 @@ export interface Portrait {
 
 export const site = {
   meta: {
-    /** Finale Domain steht noch nicht fest. Fallback: muellerthomas.ch */
-    url: 'https://thomas-mueller.ch',
+    url: 'https://www.tmueller.ch',
     locale: 'de-CH',
     name: 'Thomas Müller',
     role: 'Business & Community',
@@ -350,8 +349,7 @@ export const site = {
   },
 
   footer: {
-    domain: 'thomas-mueller.ch',
-    domainFallback: 'muellerthomas.ch',
+    domain: 'tmueller.ch',
     roleLabel: 'Business & Community',
     anchorLabel: 'Sektionen',
     legalLabel: 'Rechtliches',
