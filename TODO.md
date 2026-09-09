@@ -1,4 +1,4 @@
-# Offene Punkte — Version 3.5
+# Offene Punkte — Version 3.6
 
 Alle Platzhalter stehen in `content/site.ts`. Auf der Seite werden sie sichtbar
 als gestrichelt umrandetes Feld dargestellt, damit keiner übersehen wird.
@@ -54,6 +54,13 @@ Impressum entfernt, nicht nur platzhalterhaft belassen — siehe die
 Begründung unten unter „Rechtsform im Impressum". Partnerunternehmen wird
 wie zuvor nirgends genannt.
 
+**v3.6:** Datenschutzerklärung mit Standardtext nach Schweizer DSG befüllt,
+gestützt auf die tatsächliche Datenverarbeitung dieser Seite (Kontaktformular,
+Vercel-Hosting, Resend-Mailversand, keine Cookies/Analytics). Kein Platzhalter
+mehr auf der Seite. Domain-Referenzen von `thomas-mueller.ch` auf
+`tmueller.ch` korrigiert (Footer, Canonical-URL, Sitemap, robots.txt,
+Open-Graph-Metadaten).
+
 ---
 
 ## Rechtliches
@@ -63,11 +70,12 @@ Diese Punkte müssen erledigt sein, bevor die Seite online geht.
 **Impressum ist grösstenteils befüllt:** Name, Adresse, Telefon, E-Mail
 (Zeilen 388–391) stehen. Offen bleiben nur noch:
 
-| Platzhalter                                     | Datei             | Zeile   | Was gebraucht wird                                                                                                       |
-| ----------------------------------------------- | ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `{{HAFTUNGSAUSSCHLUSS}}` (Impressum)            | `content/site.ts` | 392     | Standard-Haftungsausschluss-Text, von einer Fachperson formuliert oder geprüft — wird hier bewusst nicht selbst verfasst |
-| `{{DISCLAIMER — juristisch geprüft?}}` (Footer) | `content/site.ts` | 371     | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft werden        |
-| Datenschutzerklärung, alle Felder               | `content/site.ts` | 401–408 | Muss zur tatsächlichen Datenverarbeitung passen (revDSG, bei EU-Bezug DSGVO)                                             |
+| Platzhalter                                     | Datei             | Zeile | Was gebraucht wird                                                                                                       |
+| ----------------------------------------------- | ----------------- | ----- | ------------------------------------------------------------------------------------------------------------------------ |
+| `{{HAFTUNGSAUSSCHLUSS}}` (Impressum)            | `content/site.ts` | 392   | Standard-Haftungsausschluss-Text, von einer Fachperson formuliert oder geprüft — wird hier bewusst nicht selbst verfasst |
+| `{{DISCLAIMER — juristisch geprüft?}}` (Footer) | `content/site.ts` | 371   | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft werden        |
+
+Datenschutzerklärung ist erledigt, kein Platzhalter mehr.
 
 Weiter zu prüfen, ausserhalb der Platzhalter:
 

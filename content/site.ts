@@ -1,5 +1,5 @@
 /**
- * Zentrale Inhaltsdatei — Version 3.5 (09.09.2026).
+ * Zentrale Inhaltsdatei — Version 3.6 (09.09.2026).
  *
  * ALLE sichtbaren Texte der Seite stehen hier. In den Komponenten steht kein
  * Fliesstext. Wer Inhalte ändern will, ändert nur diese Datei.
@@ -394,16 +394,53 @@ export const site = {
   datenschutz: {
     title: 'Datenschutzerklärung',
     intro:
-      'Diese Seite ist noch nicht befüllt. Der Text muss auf die tatsächliche Datenverarbeitung passen (revDSG, bei EU-Bezug DSGVO) und von einer Fachperson geprüft werden.',
+      'Diese Erklärung folgt dem Schweizer Datenschutzgesetz (DSG) und orientiert sich an der tatsächlichen Datenverarbeitung dieser Seite: ein Kontaktformular, kein Tracking, keine Cookies.',
+    /**
+     * Standardtext nach Schweizer DSG, gestützt auf die tatsächliche
+     * Datenverarbeitung dieser Seite (Kontaktformular, Vercel-Hosting,
+     * Resend-Mailversand, keine Cookies/Analytics). Trotzdem vor dem
+     * Livegang von einer Fachperson prüfen lassen — siehe TODO.md.
+     */
     blocks: [
-      { term: 'Verantwortliche Stelle', value: '{{NAME, ADRESSE, KONTAKT}}' },
-      { term: 'Bearbeitete Daten', value: '{{WELCHE DATEN — Formular: Name, E-Mail, Nachricht}}' },
-      { term: 'Zweck', value: '{{ZWECK DER BEARBEITUNG}}' },
-      { term: 'Rechtsgrundlage', value: '{{RECHTSGRUNDLAGE}}' },
-      { term: 'Aufbewahrung', value: '{{AUFBEWAHRUNGSDAUER}}' },
-      { term: 'Auftragsbearbeiter', value: '{{HOSTING, FORMULARDIENST, E-MAIL-ANBIETER}}' },
-      { term: 'Cookies und Statistik', value: '{{AKTUELL: KEINE. BEI ÄNDERUNG ANPASSEN.}}' },
-      { term: 'Deine Rechte', value: '{{AUSKUNFT, BERICHTIGUNG, LÖSCHUNG, WIDERSPRUCH}}' },
+      {
+        term: 'Verantwortliche Stelle',
+        value: 'Thomas Müller, Benzburweg 22, 4410 Liestal, thomitiger@gmail.com',
+      },
+      {
+        term: 'Bearbeitete Daten',
+        value:
+          'Über das Kontaktformular: Name, E-Mail-Adresse und der von dir eingegebene Nachrichtentext. Beim Aufruf der Seite fallen zudem technisch bedingte Daten an (z. B. IP-Adresse), wie sie jeder Hosting-Anbieter für den Betrieb einer Website benötigt.',
+      },
+      {
+        term: 'Zweck',
+        value:
+          'Bearbeitung deiner Anfrage für ein unverbindliches Gespräch und die Kontaktaufnahme zu diesem Zweck. Keine Weiterverwendung für Werbung oder andere Zwecke.',
+      },
+      {
+        term: 'Rechtsgrundlage',
+        value:
+          'Du teilst uns deine Daten freiwillig über das Formular mit, um eine Anfrage zu stellen. Die Bearbeitung erfolgt nach Treu und Glauben, verhältnismässig und zum angegebenen Zweck (Art. 6 DSG). Mit dem Ankreuzen der Checkbox beim Absenden bestätigst du zusätzlich ausdrücklich dein Einverständnis.',
+      },
+      {
+        term: 'Aufbewahrung',
+        value:
+          'Deine Angaben werden im E-Mail-Postfach von Thomas Müller aufbewahrt, solange sie für die Bearbeitung deiner Anfrage und eine mögliche weitere Zusammenarbeit relevant sind. Auf Wunsch werden sie früher gelöscht — siehe „Deine Rechte" unten.',
+      },
+      {
+        term: 'Auftragsbearbeiter',
+        value:
+          'Vercel Inc. (Hosting dieser Website) und Resend (Versand der Formularanfragen per E-Mail) — beide mit Sitz in den USA, beide mit vertraglichen Garantien für den Datentransfer (Data Processing Agreement).',
+      },
+      {
+        term: 'Cookies und Statistik',
+        value:
+          'Diese Website verwendet keine Cookies und keine Analyse- oder Tracking-Tools. Es werden nur die technisch notwendigen Daten bearbeitet, die beim Aufruf der Seite automatisch anfallen.',
+      },
+      {
+        term: 'Deine Rechte',
+        value:
+          'Du hast nach dem DSG das Recht auf Auskunft über deine bei uns bearbeiteten Daten, auf Berichtigung, Löschung oder Einschränkung der Bearbeitung sowie auf Widerspruch. Deine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Wende dich dazu an thomitiger@gmail.com. Bei Fragen oder Beschwerden kannst du dich auch an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) wenden.',
+      },
     ] satisfies Fact[],
   },
 
