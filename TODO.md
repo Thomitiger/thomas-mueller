@@ -1,4 +1,4 @@
-# Offene Punkte — Version 3.7
+# Offene Punkte — Version 3.8
 
 Alle Platzhalter stehen in `content/site.ts`. Auf der Seite werden sie sichtbar
 als gestrichelt umrandetes Feld dargestellt, damit keiner übersehen wird.
@@ -62,9 +62,12 @@ mehr auf der Seite. Domain-Referenzen von `thomas-mueller.ch` auf
 Open-Graph-Metadaten).
 
 **v3.7:** Haftungsausschluss im Impressum mit Standardtext befüllt (Inhalte,
-externe Links, Urheberrecht) — kein Platzhalter mehr im Impressum. Einziger
-verbleibender Textplatzhalter der ganzen Seite: der Footer-Disclaimer-Hinweis
-(`disclaimerReviewNote`), der ausdrücklich zur juristischen Prüfung auffordert.
+externe Links, Urheberrecht) — kein Platzhalter mehr im Impressum.
+
+**v3.8: Thomas hat den Footer-Disclaimer-Text wie er ist übernommen und
+freigegeben.** Der letzte Textplatzhalter der ganzen Seite
+(`disclaimerReviewNote`) ist damit entfernt — es gibt jetzt keinen einzigen
+`{{PLATZHALTER}}` mehr in `content/site.ts`.
 
 ---
 
@@ -72,15 +75,9 @@ verbleibender Textplatzhalter der ganzen Seite: der Footer-Disclaimer-Hinweis
 
 Diese Punkte müssen erledigt sein, bevor die Seite online geht.
 
-**Impressum ist vollständig befüllt** (Name, Adresse, Telefon, E-Mail,
-Haftungsausschluss) und die **Datenschutzerklärung** ebenfalls — kein
-Platzhalter mehr auf beiden Seiten. Offen bleibt nur noch:
-
-| Platzhalter                                     | Datei             | Zeile | Was gebraucht wird                                                                                                |
-| ----------------------------------------------- | ----------------- | ----- | ----------------------------------------------------------------------------------------------------------------- |
-| `{{DISCLAIMER — juristisch geprüft?}}` (Footer) | `content/site.ts` | 371   | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft werden |
-
-Weiter zu prüfen, ausserhalb der Platzhalter:
+**Keine Textplatzhalter mehr auf der ganzen Seite.** Impressum,
+Datenschutzerklärung und der Footer-Disclaimer sind alle vollständig und von
+Thomas freigegeben. Trotzdem weiter zu prüfen, ausserhalb der Platzhalter:
 
 - **Rechtsform im Impressum — wichtigster offener Punkt:** Thomas ist unter
   „Thomas Müller Holistic Coaching" als Einzelfirma im Handelsregister

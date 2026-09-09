@@ -1,5 +1,5 @@
 /**
- * Zentrale Inhaltsdatei — Version 3.7 (09.09.2026).
+ * Zentrale Inhaltsdatei — Version 3.8 (09.09.2026).
  *
  * ALLE sichtbaren Texte der Seite stehen hier. In den Komponenten steht kein
  * Fliesstext. Wer Inhalte ändern will, ändert nur diese Datei.
@@ -358,15 +358,9 @@ export const site = {
       { label: 'Datenschutz', href: '/datenschutz' },
     ] satisfies NavLink[],
     disclaimerLabel: 'Hinweis',
-    /**
-     * Wortlaut vorgegeben (Briefing §6, Footer). Trotzdem vor dem Livegang von
-     * einer Fachperson prüfen lassen und mit den Vorgaben des Partnerunternehmens
-     * abgleichen — siehe TODO.md.
-     */
+    /** Wortlaut von Thomas geprüft und freigegeben — siehe TODO.md. */
     disclaimer:
       'Thomas Müller ist selbstständiger Vertriebspartner und handelt in eigenem Namen und auf eigene Rechnung. Diese Seite ist kein Angebot eines Anstellungsverhältnisses und keine Aufforderung zum Erwerb von Produkten. Es bestehen keine garantierten Einkünfte; der wirtschaftliche Erfolg hängt von eigener Leistung, Zeiteinsatz und Marktbedingungen ab und kann auch ausbleiben.',
-    disclaimerReviewNote:
-      '{{DISCLAIMER — juristisch geprüft? Vorgaben des Partnerunternehmens abgleichen}}',
     copyrightName: 'Thomas Müller',
   },
 

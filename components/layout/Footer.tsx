@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { LogoMark, LogoWordmark } from '@/components/ui/Logo';
-import { PlaceholderText } from '@/components/ui/Placeholder';
 import { site } from '@/content/site';
 
 /** Footer: immer Petrol dunkel (petrol-2), deshalb feste Off-White-Logovariante. */
@@ -58,9 +57,6 @@ export function Footer() {
 
         <div className="mt-12 border-t border-on-petrol/20 pt-8">
           <p className="u-label-sm text-on-petrol/70">{site.footer.disclaimerLabel}</p>
-          <p className="mt-3">
-            <PlaceholderText value={site.footer.disclaimerReviewNote} tone="onPetrol" />
-          </p>
           {/* Mindestens 13 px, Kontrast über 4.5:1 — bewusst lesbar gehalten. */}
           <p className="copy mt-3 text-[0.8125rem] leading-[1.6] text-on-petrol/85">
             {site.footer.disclaimer}
