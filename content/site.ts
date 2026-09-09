@@ -1,5 +1,5 @@
 /**
- * Zentrale Inhaltsdatei — Version 3.3 (01.09.2026).
+ * Zentrale Inhaltsdatei — Version 3.5 (09.09.2026).
  *
  * ALLE sichtbaren Texte der Seite stehen hier. In den Komponenten steht kein
  * Fliesstext. Wer Inhalte ändern will, ändert nur diese Datei.
@@ -375,16 +375,20 @@ export const site = {
   impressum: {
     title: 'Impressum',
     intro:
-      'Diese Seite ist noch nicht befüllt. Die Angaben müssen vollständig und korrekt sein, bevor die Website online geht.',
+      'Verantwortlich für den Inhalt dieser Website ist Thomas Müller als Privatperson — für diese Tätigkeit ohne eigenen Handelsregistereintrag.',
+    /**
+     * Rechtsform: Thomas ist unter „Thomas Müller Holistic Coaching" als
+     * Einzelfirma im Handelsregister eingetragen — für eine andere, hiervon
+     * unabhängige Tätigkeit. Auf ausdrücklichen Wunsch wird diese Firma hier
+     * nicht genannt, da sie mit dem Direktvertrieb nichts zu tun hat. Diese
+     * Einschätzung sollte trotzdem von einer Fachperson (Treuhänder/Anwalt)
+     * bestätigt werden — siehe TODO.md.
+     */
     blocks: [
-      { term: 'Verantwortlich', value: '{{VOR- UND NACHNAME}}' },
-      { term: 'Firma', value: '{{FIRMIERUNG, RECHTSFORM}}' },
-      { term: 'Adresse', value: '{{STRASSE, PLZ ORT, LAND}}' },
-      { term: 'E-Mail', value: '{{E-MAIL-ADRESSE}}' },
-      { term: 'Telefon', value: '{{TELEFON ODER STREICHEN}}' },
-      { term: 'Handelsregister / UID', value: '{{UID-NUMMER ODER STREICHEN}}' },
-      { term: 'Mehrwertsteuer', value: '{{MWST-NUMMER ODER STREICHEN}}' },
-      { term: 'Partnerunternehmen', value: '{{PARTNERUNTERNEHMEN — falls rechtlich nötig}}' },
+      { term: 'Verantwortlich', value: 'Thomas Müller' },
+      { term: 'Adresse', value: 'Benzburweg 22, 4410 Liestal' },
+      { term: 'Telefon', value: '079 366 90 13' },
+      { term: 'E-Mail', value: 'thomitiger@gmail.com' },
       { term: 'Haftungsausschluss', value: '{{HAFTUNGSAUSSCHLUSS — juristisch prüfen lassen}}' },
     ] satisfies Fact[],
   },

@@ -1,4 +1,4 @@
-# Offene Punkte — Version 3.4
+# Offene Punkte — Version 3.5
 
 Alle Platzhalter stehen in `content/site.ts`. Auf der Seite werden sie sichtbar
 als gestrichelt umrandetes Feld dargestellt, damit keiner übersehen wird.
@@ -48,20 +48,40 @@ geht an `thomitiger@gmail.com`, `reply-to` ist die E-Mail der anfragenden
 Person. Getestet: direkter API-Aufruf und einmal live über das Formular in
 der Website-UI, beide erfolgreich zugestellt.
 
+**v3.5:** Impressum mit echten Angaben befüllt (Name, Adresse, Telefon,
+E-Mail). Firma/Handelsregister und Mehrwertsteuer wurden auf Wunsch aus dem
+Impressum entfernt, nicht nur platzhalterhaft belassen — siehe die
+Begründung unten unter „Rechtsform im Impressum". Partnerunternehmen wird
+wie zuvor nirgends genannt.
+
 ---
 
 ## Rechtliches
 
 Diese Punkte müssen erledigt sein, bevor die Seite online geht.
 
-| Platzhalter                            | Datei             | Zeile   | Was gebraucht wird                                                                                                                                                         |
-| -------------------------------------- | ----------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `{{DISCLAIMER — juristisch geprüft?}}` | `content/site.ts` | 371     | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft und mit den Vorgaben des Partnerunternehmens abgeglichen werden |
-| Impressum, alle Felder                 | `content/site.ts` | 380–388 | Name, Firmierung, Adresse, Kontakt, UID/MWST soweit vorhanden, Partnerunternehmen (falls rechtlich nötig), Haftungsausschluss                                              |
-| Datenschutzerklärung, alle Felder      | `content/site.ts` | 397–404 | Muss zur tatsächlichen Datenverarbeitung passen (revDSG, bei EU-Bezug DSGVO)                                                                                               |
+**Impressum ist grösstenteils befüllt:** Name, Adresse, Telefon, E-Mail
+(Zeilen 388–391) stehen. Offen bleiben nur noch:
+
+| Platzhalter                                     | Datei             | Zeile   | Was gebraucht wird                                                                                                       |
+| ----------------------------------------------- | ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `{{HAFTUNGSAUSSCHLUSS}}` (Impressum)            | `content/site.ts` | 392     | Standard-Haftungsausschluss-Text, von einer Fachperson formuliert oder geprüft — wird hier bewusst nicht selbst verfasst |
+| `{{DISCLAIMER — juristisch geprüft?}}` (Footer) | `content/site.ts` | 371     | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft werden        |
+| Datenschutzerklärung, alle Felder               | `content/site.ts` | 401–408 | Muss zur tatsächlichen Datenverarbeitung passen (revDSG, bei EU-Bezug DSGVO)                                             |
 
 Weiter zu prüfen, ausserhalb der Platzhalter:
 
+- **Rechtsform im Impressum — wichtigster offener Punkt:** Thomas ist unter
+  „Thomas Müller Holistic Coaching" als Einzelfirma im Handelsregister
+  eingetragen, für eine andere, unabhängige Tätigkeit. Auf seinen
+  ausdrücklichen Wunsch wird diese Firma im Impressum dieser Seite nicht
+  genannt — er verantwortet den Direktvertrieb hier als Privatperson ohne
+  eigenen Registereintrag für diese Tätigkeit. **Diese Einschätzung ist
+  keine rechtliche Bewertung von mir und sollte vor dem Livegang von einem
+  Treuhänder oder Anwalt bestätigt werden** — insbesondere die Frage, ob
+  eine bereits im Handelsregister eingetragene Person für eine zweite,
+  ähnlich gelagerte Erwerbstätigkeit trotzdem die eingetragene Firma nennen
+  muss oder als Privatperson auftreten darf.
 - **„Network Marketing" in Sektion 02 und in „Mein Weg":** Bewusste Ausnahme
   von der sonst geltenden Regel, im Wortlaut, den Thomas selbst geliefert hat.
   Nicht versehentlich als Fehler korrigieren.
@@ -71,8 +91,6 @@ Weiter zu prüfen, ausserhalb der Platzhalter:
   selbst zur Verfügung gestellt. Vor dem Livegang kurz bestätigen lassen, dass
   die Nutzungsrechte für die eigene Website geklärt sind (falls ein externer
   Fotograf sie aufgenommen hat).
-- **Nennung des Partnerunternehmens:** Vor dem Livegang prüfen, was der Vertrag
-  über die Nennung von Firmenname und Marke auf eigenen Websites sagt.
 
 ---
 
