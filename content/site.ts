@@ -1,5 +1,5 @@
 /**
- * Zentrale Inhaltsdatei — Version 3.6 (09.09.2026).
+ * Zentrale Inhaltsdatei — Version 3.7 (09.09.2026).
  *
  * ALLE sichtbaren Texte der Seite stehen hier. In den Komponenten steht kein
  * Fliesstext. Wer Inhalte ändern will, ändert nur diese Datei.
@@ -387,7 +387,11 @@ export const site = {
       { term: 'Adresse', value: 'Benzburweg 22, 4410 Liestal' },
       { term: 'Telefon', value: '079 366 90 13' },
       { term: 'E-Mail', value: 'thomitiger@gmail.com' },
-      { term: 'Haftungsausschluss', value: '{{HAFTUNGSAUSSCHLUSS — juristisch prüfen lassen}}' },
+      {
+        term: 'Haftungsausschluss',
+        value:
+          'Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte auf dieser Website wird keine Gewähr übernommen; Haftungsansprüche gegen Thomas Müller aus Schäden, die durch die Nutzung oder Nichtnutzung der veröffentlichten Informationen entstanden sind, werden ausgeschlossen, soweit gesetzlich zulässig. Diese Website verweist auf externe Seiten Dritter (z. B. Facebook, Instagram), auf deren Inhalte kein Einfluss besteht — verantwortlich dafür ist stets der jeweilige Anbieter. Alle Inhalte dieser Website (Texte, Bilder, Logo) sind urheberrechtlich geschützt; jede Verwendung ausserhalb der gesetzlichen Grenzen bedarf der vorherigen schriftlichen Zustimmung.',
+      },
     ] satisfies Fact[],
   },
 

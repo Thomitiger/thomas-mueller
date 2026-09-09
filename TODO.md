@@ -1,4 +1,4 @@
-# Offene Punkte — Version 3.6
+# Offene Punkte — Version 3.7
 
 Alle Platzhalter stehen in `content/site.ts`. Auf der Seite werden sie sichtbar
 als gestrichelt umrandetes Feld dargestellt, damit keiner übersehen wird.
@@ -61,21 +61,24 @@ mehr auf der Seite. Domain-Referenzen von `thomas-mueller.ch` auf
 `tmueller.ch` korrigiert (Footer, Canonical-URL, Sitemap, robots.txt,
 Open-Graph-Metadaten).
 
+**v3.7:** Haftungsausschluss im Impressum mit Standardtext befüllt (Inhalte,
+externe Links, Urheberrecht) — kein Platzhalter mehr im Impressum. Einziger
+verbleibender Textplatzhalter der ganzen Seite: der Footer-Disclaimer-Hinweis
+(`disclaimerReviewNote`), der ausdrücklich zur juristischen Prüfung auffordert.
+
 ---
 
 ## Rechtliches
 
 Diese Punkte müssen erledigt sein, bevor die Seite online geht.
 
-**Impressum ist grösstenteils befüllt:** Name, Adresse, Telefon, E-Mail
-(Zeilen 388–391) stehen. Offen bleiben nur noch:
+**Impressum ist vollständig befüllt** (Name, Adresse, Telefon, E-Mail,
+Haftungsausschluss) und die **Datenschutzerklärung** ebenfalls — kein
+Platzhalter mehr auf beiden Seiten. Offen bleibt nur noch:
 
-| Platzhalter                                     | Datei             | Zeile | Was gebraucht wird                                                                                                       |
-| ----------------------------------------------- | ----------------- | ----- | ------------------------------------------------------------------------------------------------------------------------ |
-| `{{HAFTUNGSAUSSCHLUSS}}` (Impressum)            | `content/site.ts` | 392   | Standard-Haftungsausschluss-Text, von einer Fachperson formuliert oder geprüft — wird hier bewusst nicht selbst verfasst |
-| `{{DISCLAIMER — juristisch geprüft?}}` (Footer) | `content/site.ts` | 371   | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft werden        |
-
-Datenschutzerklärung ist erledigt, kein Platzhalter mehr.
+| Platzhalter                                     | Datei             | Zeile | Was gebraucht wird                                                                                                |
+| ----------------------------------------------- | ----------------- | ----- | ----------------------------------------------------------------------------------------------------------------- |
+| `{{DISCLAIMER — juristisch geprüft?}}` (Footer) | `content/site.ts` | 371   | Wortlaut vorgegeben (der ALIVE-Satz wurde auf Wunsch entfernt), muss trotzdem von einer Fachperson geprüft werden |
 
 Weiter zu prüfen, ausserhalb der Platzhalter:
 
