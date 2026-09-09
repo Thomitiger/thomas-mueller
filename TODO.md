@@ -1,4 +1,4 @@
-# Offene Punkte — Version 3.3
+# Offene Punkte — Version 3.4
 
 Alle Platzhalter stehen in `content/site.ts`. Auf der Seite werden sie sichtbar
 als gestrichelt umrandetes Feld dargestellt, damit keiner übersehen wird.
@@ -40,8 +40,13 @@ Meta-Angaben „Seit" und „Standort" wurden auf Wunsch gestrichen.
 (https://www.facebook.com/thomas.mueller.52493,
 https://www.instagram.com/thomas.mueller62/), und der mailto-Fallback im
 Formular zeigt jetzt auf `thomitiger@gmail.com`. Keine offenen Platzhalter
-mehr in diesem Abschnitt — nur noch die Formularanbindung selbst
-(`{{FORM_ENDPOINT}}`, siehe Technik unten) und das Rechtliche.
+mehr in diesem Abschnitt und keine mehr in „Inhalt" insgesamt.
+
+**v3.4: Das Formular versendet jetzt echte E-Mails.** Anbindung über Resend
+(siehe README, Abschnitt „Wie das Formular angebunden wird") — jede Anfrage
+geht an `thomitiger@gmail.com`, `reply-to` ist die E-Mail der anfragenden
+Person. Getestet: direkter API-Aufruf und einmal live über das Formular in
+der Website-UI, beide erfolgreich zugestellt.
 
 ---
 
@@ -85,11 +90,10 @@ Weiter zu prüfen, ausserhalb der Platzhalter:
 
 ## Technik
 
-| Punkt                                                         | Anmerkung                                                                                                                                                                                                                |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `{{FORM_ENDPOINT}}` (`content/site.ts` Zeile 320)             | Solange hier ein Platzhalter steht, prüft die Server Action die Eingaben und meldet Erfolg — es wird nichts versendet und nichts gespeichert                                                                             |
-| Build noch nie auf einer eigenen Node-Installation ausgeführt | Für diese Session wurde eine portable Node-Version geladen; `npm install`, `npm run build`, `npm run lint`, `npm run typecheck`, `npm run contrast` liefen alle erfolgreich durch. Node 20 oder neuer voraussetzen       |
-| npm-Audit-Warnungen                                           | Drei High-Severity-Funde in transitiven Build-Abhängigkeiten von Next.js (`postcss`, `sharp`) — reine Build-Zeit-Werkzeuge, nicht laufzeitrelevant. Fix verlangt Next-16-Upgrade, bewusst nicht automatisch durchgeführt |
+| Punkt                                                         | Anmerkung                                                                                                                                                                                                                  |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `RESEND_API_KEY`                                              | **Erledigt.** Gesetzt in Vercel (production/preview/development) und lokal in `.env.local` (gitignored, nie committen). Formular versendet über Resend, Domain `tmueller.ch` verifiziert, Empfänger `thomitiger@gmail.com` |
+| Build noch nie auf einer eigenen Node-Installation ausgeführt | Für diese Session wurde eine portable Node-Version geladen; `npm install`, `npm run build`, `npm run lint`, `npm run typecheck`, `npm run contrast` liefen alle erfolgreich durch. Node 20 oder neuer voraussetzen         |
+| npm-Audit-Warnungen                                           | Drei High-Severity-Funde in transitiven Build-Abhängigkeiten von Next.js (`postcss`, `sharp`) — reine Build-Zeit-Werkzeuge, nicht laufzeitrelevant. Fix verlangt Next-16-Upgrade, bewusst nicht automatisch durchgeführt   |
 
-Wenn kein Formulardienst gewünscht ist, reicht der mailto-Fallback unter dem
-Formular. Dann `{{E-MAIL-ADRESSE}}` setzen und das Formular entfernen.
+Formular ist vollständig angebunden, kein weiterer Schritt nötig.

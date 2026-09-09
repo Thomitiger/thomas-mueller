@@ -113,21 +113,25 @@ Das Formular in der Gespräch-Sektion läuft über eine Server Action
 [`lib/form.ts`](lib/form.ts) und werden von beiden Seiten benutzt: clientseitig
 beim Verlassen eines Felds, serverseitig beim Absenden.
 
-Solange `formEndpoint` in `content/site.ts` ein Platzhalter ist, wird
-**ausschliesslich validiert**. Es wird nichts versendet und nichts gespeichert.
+**Versand läuft über [Resend](https://resend.com)**, direkt per `fetch` gegen
+`api.resend.com` — kein SDK, keine zusätzliche Abhängigkeit. Der Absender
+(`RESEND_FROM` in `app/actions.ts`) liegt auf der bei Resend verifizierten
+Domain `tmueller.ch`; der Empfänger ist `gespraech.mailtoFallback.email` in
+`content/site.ts` (eine einzige Quelle für die Adresse). `reply_to` wird auf
+die E-Mail der anfragenden Person gesetzt — eine Antwort geht direkt an sie.
 
-Anbindung:
+Ohne die Umgebungsvariable `RESEND_API_KEY` wird **ausschliesslich
+validiert**, es wird nichts versendet. Der Key liegt in Vercel als
+Environment Variable (`production`, `preview`, `development`) und lokal in
+`.env.local` (gitignored, nie committen). Zum lokalen Testen:
 
-1. In `content/site.ts` bei `gespraech.formEndpoint` die URL des Formulardienstes
-   eintragen (z. B. Formspree, Basin, eine eigene Route).
-2. Die Server Action sendet dann `{ name, email, message }` als JSON per POST
-   dorthin. Bei einem Fehler bleibt das Formular ausgefüllt stehen und zeigt eine
-   Meldung in Klartext.
-3. Die Datenschutzerklärung an den gewählten Dienst anpassen — er ist
-   Auftragsbearbeiter.
+```bash
+vercel env pull .env.local --environment=development
+npm run dev
+```
 
-Alternative ohne Dienst: nur den mailto-Fallback unter dem Formular benutzen.
-Dann `mailtoFallback.email` setzen und das Formular entfernen.
+Absenderadresse ändern: `RESEND_FROM` in `app/actions.ts` anpassen — muss auf
+einer bei Resend verifizierten Domain liegen, keine echte Mailbox nötig.
 
 ---
 

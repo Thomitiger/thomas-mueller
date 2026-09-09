@@ -331,11 +331,11 @@ export const site = {
     successBody:
       'Deine Anfrage liegt bei mir. Ich melde mich bei dir. Wenn du in der Zwischenzeit etwas ergänzen willst, schreib mir direkt.',
     /**
-     * Versandweg. Solange hier ein Platzhalter steht, validiert die Server Action
-     * die Eingaben und gibt einen Erfolgszustand zurück — es wird nichts versendet.
-     * Siehe app/actions.ts und TODO.md.
+     * Versandweg: Resend (siehe app/actions.ts). Der Empfänger ist
+     * mailtoFallback.email unten — eine einzige Quelle für die Adresse.
+     * Ohne den Umgebungsvariable RESEND_API_KEY validiert die Server Action
+     * nur und gibt einen Erfolgszustand zurück — es wird nichts versendet.
      */
-    formEndpoint: '{{FORM_ENDPOINT}}' as Placeholder,
     mailtoFallback: {
       label: 'Oder schreib direkt:',
       email: 'thomitiger@gmail.com',
