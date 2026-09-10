@@ -8,8 +8,8 @@ const haltung = site.haltung;
 
 /**
  * Haltung und Werte & Spielregeln in einer Sektion (v3.2, gekürzt): vier
- * kurze Prinzipien, ein Ein-Satz-Zitat mit ALIVE-Quelle und die eine
- * konkrete Zusage (120 Tage) statt einer ausgebreiteten Werte-/Regel-Liste.
+ * kurze Prinzipien. Das ALIVE-Zitat und die 120-Tage-Zusage wurden auf
+ * Wunsch entfernt.
  */
 export function Haltung() {
   return (
@@ -43,17 +43,6 @@ export function Haltung() {
             </li>
           ))}
         </ol>
-
-        <Reveal delay={40}>
-          <div className="mt-14 border-l-2 border-brass pl-6 sm:pl-8">
-            <p className="t-lead max-w-[42ch]">{haltung.quote}</p>
-            <cite className="u-label-sm mt-3 block not-italic text-ink-2">
-              {haltung.quoteSource}
-            </cite>
-          </div>
-        </Reveal>
-
-        <p className="copy mt-8 font-medium text-ink">{haltung.commitment}</p>
       </Container>
     </section>
   );

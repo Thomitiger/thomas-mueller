@@ -1,5 +1,5 @@
 /**
- * Zentrale Inhaltsdatei — Version 3.8 (09.09.2026).
+ * Zentrale Inhaltsdatei — Version 3.9 (10.09.2026).
  *
  * ALLE sichtbaren Texte der Seite stehen hier. In den Komponenten steht kein
  * Fliesstext. Wer Inhalte ändern will, ändert nur diese Datei.
@@ -14,6 +14,9 @@
  * ist auf das Nötigste gekürzt. Ausserdem drei Fotoplätze für echte Bilder
  * von Thomas — Hero, Mein Weg, Gespräch — damit ein Besucher früh ein
  * Gesicht sieht, nicht nur Text.
+ *
+ * v3.9: Das ALIVE-Zitat und die 120-Tage-Zusage sind aus der Haltung
+ * komplett entfernt (auf Wunsch) — die Seite nennt ALIVE nirgends mehr.
  *
  * v3.3: "Mein Weg" mit dem echten Text von Thomas befüllt (zwei Stationen,
  * je mit Titel und mehreren Absätzen) — kein Platzhalter mehr. "Seit" und
@@ -30,9 +33,6 @@
  *   — Sektion 02 (Haltung, Punkt 01) und Sektion "Mein Weg" (Station 2,
  *   "Warum Network Marketing") — auf ausdrücklichen Wunsch von Thomas, im
  *   Wortlaut, den er selbst geliefert hat.
- * - Die Haltung baut auf der Philosophie von ALIVE — The Movement auf; das
- *   wird kurz genannt (Sektion 02), aber die vollständige Werte-/Regel-Liste
- *   wird auf dieser Seite bewusst nicht mehr ausgebreitet (Kürzung v3.2).
  */
 
 export type Placeholder = `{{${string}}}` | string;
@@ -175,9 +175,6 @@ export const site = {
         body: 'Ich werde niemanden überreden. Aber wer sich bewusst entscheidet, dem gebe ich Offenheit, Verbindlichkeit und echte Begleitung zurück.',
       },
     ] satisfies Principle[],
-    quote: 'Wir entwickeln Menschen — nicht nur eine Organisation.',
-    quoteSource: 'ALIVE — The Movement',
-    commitment: 'Konkret: Neue Partner begleite ich aktiv mindestens 120 Tage.',
   },
 
   partnerweg: {
@@ -210,7 +207,7 @@ export const site = {
       'Nicht zehn Stunden Beschäftigung. Zehn Stunden gezielter Aufbau — kein Erfolgsversprechen, sondern eine Entscheidung.',
     areas: [
       { title: 'Lernen', body: 'Fähigkeiten entwickeln, üben, besser werden.' },
-      { title: 'Aufbauen', body: 'Beziehungen entwickeln, das eigene Business voranbringen.' },
+      { title: 'Aufbauen', body: 'Beziehungen entwickeln.' },
       { title: 'Begleiten', body: 'Kunden und Partner unterstützen, präsent sein.' },
       { title: 'Entwickeln', body: 'Reflektieren, anpassen, persönlich wachsen.' },
     ] satisfies StundenArea[],

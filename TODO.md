@@ -1,4 +1,4 @@
-# Offene Punkte — Version 3.8
+# Offene Punkte — Version 3.9
 
 Alle Platzhalter stehen in `content/site.ts`. Auf der Seite werden sie sichtbar
 als gestrichelt umrandetes Feld dargestellt, damit keiner übersehen wird.
@@ -69,6 +69,13 @@ freigegeben.** Der letzte Textplatzhalter der ganzen Seite
 (`disclaimerReviewNote`) ist damit entfernt — es gibt jetzt keinen einzigen
 `{{PLATZHALTER}}` mehr in `content/site.ts`.
 
+**v3.9:** Der Footer-Link „Für wen" ist entfernt (führte von Impressum/
+Datenschutz aus nirgends hin, da dort kein Element mit dieser ID existiert —
+Footer hat jetzt eine eigene, kürzere Sektionsliste). In der Haltung-Sektion
+sind das ALIVE-Zitat und die 120-Tage-Zusage komplett gestrichen, auf
+Wunsch. Im Zehn-Stunden-Prinzip ist der Text der Karte „Aufbauen" gekürzt
+(„Beziehungen entwickeln."), damit alle vier Karten gleich lang sind.
+
 ---
 
 ## Rechtliches
@@ -93,8 +100,6 @@ Thomas freigegeben. Trotzdem weiter zu prüfen, ausserhalb der Platzhalter:
 - **„Network Marketing" in Sektion 02 und in „Mein Weg":** Bewusste Ausnahme
   von der sonst geltenden Regel, im Wortlaut, den Thomas selbst geliefert hat.
   Nicht versehentlich als Fehler korrigieren.
-- **ALIVE — The Movement:** Die Haltung nennt die Quelle kurz (Sektion 02).
-  Vor dem Livegang prüfen, ob eine Genehmigung oder ein Rechtehinweis nötig ist.
 - **Bildrechte:** Die drei Fotos (`public/thomas-*.jpg`) stammen von Thomas
   selbst zur Verfügung gestellt. Vor dem Livegang kurz bestätigen lassen, dass
   die Nutzungsrechte für die eigene Website geklärt sind (falls ein externer
