@@ -352,6 +352,15 @@ export const site = {
     domain: 'tmueller.ch',
     roleLabel: 'Business & Community',
     anchorLabel: 'Sektionen',
+    /**
+     * Eigene, kürzere Liste statt header.anchorNav: "Für wen" führt von den
+     * Unterseiten (Impressum/Datenschutz) aus nirgends hin, weil dort kein
+     * Element mit dieser ID existiert. Auf Wunsch aus dem Footer entfernt.
+     */
+    sections: [
+      { label: 'Haltung', href: '#haltung' },
+      { label: 'Partnerweg', href: '#partnerweg' },
+    ] satisfies NavLink[],
     legalLabel: 'Rechtliches',
     legal: [
       { label: 'Impressum', href: '/impressum' },

@@ -25,7 +25,7 @@ export function Footer() {
           <div className="col-span-12 xs:col-span-6 sm:col-span-4">
             <p className="u-label-sm text-on-petrol/70">{site.footer.anchorLabel}</p>
             <ul className="mt-4 space-y-1">
-              {site.header.anchorNav.map((item) => (
+              {site.footer.sections.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
