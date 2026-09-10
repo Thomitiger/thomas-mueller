@@ -38,8 +38,8 @@ export function ZehnStunden() {
 
         <ul className="mt-14 grid grid-cols-1 gap-5 xs:grid-cols-2 lg:grid-cols-4">
           {stunden.areas.map((area, index) => (
-            <li key={area.title}>
-              <Reveal delay={staggerDelay(index, 30)}>
+            <li key={area.title} className="h-full">
+              <Reveal delay={staggerDelay(index, 30)} className="h-full">
                 <div className="card h-full p-6">
                   <p className="u-label text-brass">{String(index + 1).padStart(2, '0')}</p>
                   <h3 className="mt-3 font-display text-[1.05rem] font-semibold">{area.title}</h3>

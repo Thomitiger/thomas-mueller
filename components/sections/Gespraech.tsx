@@ -43,8 +43,8 @@ export function Gespraech() {
 
         <ul className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-3">
           {section.topics.map((topic, index) => (
-            <li key={topic.title}>
-              <Reveal delay={staggerDelay(index, 20)}>
+            <li key={topic.title} className="h-full">
+              <Reveal delay={staggerDelay(index, 20)} className="h-full">
                 <div className="h-full rounded-card border border-on-petrol/20 p-5">
                   <h4 className="font-display text-[1rem] font-semibold text-on-petrol">
                     {topic.title}
